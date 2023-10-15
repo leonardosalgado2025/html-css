@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+
+    <h2>Código-fonte / Pré-formatado</h2>
+
+    <p>O comando <code>document.getElementById("teset")</code> em linguagem JavaScript.</p>
+    <p>Utilizamos a tag &lt; <strong>code</strong> &gt; para colocar uma fonte monoespaçada, <br>mantendeo todos os caracteres com a mesma largura. (utilizado, por exemplo, em linhas dde código).</p>
+    <pre>   <!--Tag <pre> para manter o expaço entre linhas e colunas; Tag <code> para manter o espaço entre as letras igual-->
+        <code>    
+num = int(input('Digite um número'))
+if num % 2 == 0:
+    print(f'O numero {num} é par')
+else
+    print(f'O número {num é ímpar}) 
+print('Fim do programa')      
+        </code>
+    </pre>
+    <p>Com a tag &lt; <strong>pre</strong> &gt;, criamos um texto pré-formatado, o que irá respeitar a estrutura dentro do código, <br>como espaços, linhas, e tabelas.</p>
+
+    <h2>Citações:</h2> <!--Tag <q> (quote): citações ("")-->
+
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido.</q>.</p>
+    <p>Esta citação é realizada a parir da tag &lt; <strong>q</strong> &gt;(quote) e contém o sentido semântico de citação.</p>
+
+    <h2>Citações completas (blocos de texto):</h2> 
+    <!--Tag <blockquote>: citações completas (coloca espaço entre a margem e o texto) 
+        ainda é possivel colocar o site onde a citação foi retirada com o elemento "cite" (<blockquote cite="www...."></blockquote>)-->
+
+    <p>Segundo J.K. Rowling no seu livro Harry Potter e o Cálice de Fogo:</p>
+    <blockquote cite="https://www.google.pt/books/edition/Harry_Potter_e_o_C%C3%A1lice_de_Fogo/gzYQCwAAQBAJ?hl=en&gbpv=0"> 
+        Harry Potter nem quer acreditar na sua sorte! Afinal não vai ter de aturar os Dursleys até ao início do seu quarto ano em Hogwarts. Graças à taça Mundial de Quidditch vai passar os últimos 15 dias de férias na companhia dos Weasleys e do seu amigo Ron.
+    </blockquote>
+    <p>Para criar citações completas, utilizamso a tag &lt; <strong>blockquote</strong> &gt;, o que coloca um espaço entre a margem e o texte dá também valor semântico à citação.</p>
+    <p>Usamos (dentro do blockquote) a tag "cite" para colocar o link do site onde a citação foi copiada. <br>Esta opção não altera nada no site, no entanto, a estrutura interna do site sabe que a frase citada está presente daquele site: </p>
+
+    <pre>
+        <code>
+&lt;blockquote cite="https://www.google.pt/books/edition/Harry_Potter_e_o_C%C3%A1lice_de_Fogo/gzYQCwAAQBAJ?hl=en&gbpv=0"&gt; 
+        </code>
+    </pre>
+
+    <h2>Abreviações:</h2> 
+    
+    <!--Tag <abbr>: aberviações; title:="significado da abreviação", ao passar o cursor por cima da abbr, mostra o significado-->
+
+    <p>Estou a aprender <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou a adorar!</p>
+    <p>Podemos criar uma abreviação utilizando a tag &lt; <strong>abbr</strong> &gt;, o que, ao passar o corsor por cima, mostra o significado da sigla:</p>
+
+    <pre>
+        <code>
+&lt;abbr title="Hyper Text Markup Language"&gt;HTML
+        </code>
+    </pre>
+
+
+    
+</body>
+</html>
