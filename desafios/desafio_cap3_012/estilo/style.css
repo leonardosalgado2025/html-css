@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+
+/*Header:*/
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header p {
+    padding-bottom: 50px;
+}
+
+
+/*Links gerais:*/
+a {
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/*Sections - geral*/
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 35px;
+
+    line-height: 2em;
+    letter-spacing: 0.1em;
+}
+
+
+/*Sections - normais:*/
+section.normal {
+    background-color: white;
+
+    color: black;
+}
+
+
+/*Sections - imagens*/
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.644);
+
+    color: white;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.151);
+
+    width: 400px;
+
+    padding: 15px;
+}
+
+
+/*Footer:*/
+footer {
+    background-color: black;
+
+    text-align: center;
+    color: white;
+
+    padding: 3px;
+}
