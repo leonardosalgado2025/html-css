@@ -65,7 +65,11 @@ section {
     letter-spacing: 0.1em;
 
     font-family: var(--fonte3);
-    font-size: 4vw;
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 
@@ -77,23 +81,40 @@ section.normal {
 }
 
 section.normal > p {
-    padding: 15px;
+    padding-left: 15px;
 }
 
 
 /*Sections - imagens*/
 section.imagem {
     background-color: rgba(0, 0, 0, 0.644);
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
 
     color: white;
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.151);
+    background-color: rgba(0, 0, 0, 0.452);
 
     display: inline-block;
 
     padding: 15px;
+
+    text-shadow: 2px 2px 2px black;
+}
+
+
+/*Imagens em PARALAX:*/
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right bottom;
 }
 
 
