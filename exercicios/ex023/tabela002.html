@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        table {
+            width: 500px;
+
+            border-collapse: collapse;
+
+        }
+
+
+        td, th{
+            border: 1px  solid black;
+
+            padding: 10px;
+          
+        }
+
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+
+            padding: 10px;
+
+            background-color: rgba(144, 238, 144, 0.452);
+
+            border: 1px solid black;
+            border-bottom: 0px;
+        }
+
+        thead {
+            position:sticky;
+            top: -1px;
+            background-color: lightgreen;
+        }
+
+
+        tbody >tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+
+        thead, tfoot {
+            background-color:  lightgreen;
+
+            color: rgb(54, 54, 54);
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+
+        th#juncao {
+            width: 60px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População dos destritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Destrito</th>
+                <th scope="col" id="juncao">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lisboa</td>
+                <td class="num">2 287 869</td>
+            </tr>
+            <tr>
+                <td>Porto</td>
+                <td class="num">1 803 223</td>
+            </tr>
+            <tr>
+                <td>Setúbal</td>
+                <td class="num">882 588</td>
+            </tr>
+            <tr>
+                <td>Braga</td>
+                <td class="num">850 128</td>
+            </tr>
+            <tr>
+                <td>Aveiro</td>
+                <td class="num">708 902</td>
+            </tr>
+            <tr>
+                <td>Faro</td>
+                <td class="num">469 983</td>
+            </tr>
+            <tr>
+                <td>Leiria</td>
+                <td class="num">465 169</td>
+            </tr>
+            <tr>
+                <td>Santarém</td>
+                <td class="num">431 633</td>
+            </tr>
+            <tr>
+                <td>Coimbra</td>
+                <td class="num">411 510</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+               <th scope="row">Total de Habitantes</th>
+               <td class="num"><strong>8.311.005</strong></td> 
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
