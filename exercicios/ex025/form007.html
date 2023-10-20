@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="idest">Destrito:</label>
+            <select name="destrito" id="idest">
+
+                <optgroup label="Região Norte">
+                    <option value="PRT">Porto</option>
+                    <option value="AVR">Aveiro</option>
+                    <option value="VLR">Vila Real</option>
+                    <option value="BRG">Braga</option>
+                </optgroup>
+
+                <optgroup label="Região Sul">
+                    <option value="LIS">Lisboa</option>
+                    <option value="STB">Setubal</option>
+                    <option value="GRD">Guarda</option>
+                    <option value="FRO">Faro</option>
+                </optgroup>
+                
+            </select>
+        </p>
+
+
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Adeministrador</option>
+                <option >Contabilista</option>
+                <option >Professor</option>
+                <option>Desenvolvedor</option>
+
+            </datalist>
+        </p>
+
+        <p>
+            <label for="mng">Mensagem</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+
+        <p>
+            <input type="submit" value="Submeter">
+            <input type="reset" value="Apagar">
+        </p>
+    </form>
+    
+</body>
+</html>
